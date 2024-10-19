@@ -1,15 +1,16 @@
 body {
-    margin: 0; 
-    padding: 0; 
+    margin: 0; /* Забираємо зовнішній відступ */
+    padding: 0; /* Забираємо внутрішній відступ */
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
     background-image: url("https://cdn.pixabay.com/photo/2021/04/24/05/35/reynisdrangar-6203264_1280.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    min-height: 100vh; 
-    width: 100%; 
+    background-attachment: fixed; /* Фіксуємо фон, щоб він не скролився */
+    background-size: 100% 100%; /* Фон розтягується на весь екран по ширині та висоті */
+    background-position: center; /* Центруємо фон */
+    min-height: 100vh; /* Мінімальна висота - 100% висоти вікна браузера */
 }
+
 
 .container{
     display: flex;
